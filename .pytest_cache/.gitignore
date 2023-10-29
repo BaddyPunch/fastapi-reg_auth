@@ -3,4 +3,4 @@ pages/
 templates/
 static/
 migrations/
-/alembic.ini
+alembic.ini
