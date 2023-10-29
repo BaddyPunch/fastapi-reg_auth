@@ -2,4 +2,5 @@
 pages/
 templates/
 static/
-web-variables.env
+migrations/
+/alembic.ini
