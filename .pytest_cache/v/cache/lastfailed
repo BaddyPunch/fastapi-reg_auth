@@ -1,0 +1,4 @@
+{
+  "testing.py::test_answer": true,
+  "testing.py::TestClass::test_two": true
+}

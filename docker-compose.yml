@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  mr_main:
+    build:
+            context: .
+            dockerfile: ./Dockerfile
+            args:
+                PY_IMAGE: python
+                PY_IMAGE_VERSION: 3.9
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - '.:/src'
+    ports:
+          - 8000:8000
+    env_file:
+    - web-variables.env
+
