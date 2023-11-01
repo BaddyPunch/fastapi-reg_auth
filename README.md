@@ -15,5 +15,5 @@
 - `main.py`: Основной файл FastAPI приложения.
 - `app/auth`: Модули регистрации, аутентификации и создания JWT-токена.
 - `Dockerfile`: Файл `Dockerfile` для создания Docker-образа приложения.
-- `docker-compose.yml`: Файл `docker-compose.yml` для управления Docker-контейнерами и окружением разработки.
+- `docker-compose.yml`: Файл для управления Docker-контейнерами и окружением разработки.
 - `requirements.txt`: Список зависимостей Python для проекта.
