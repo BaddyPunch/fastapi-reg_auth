@@ -4,3 +4,5 @@ templates/
 static/
 migrations/
 alembic.ini
+.env
+config.py

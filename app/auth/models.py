@@ -5,8 +5,10 @@ from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, Asyn
 from datetime import datetime
 from typing import AsyncGenerator
 from sqlalchemy.orm import Mapped, mapped_column, DeclarativeMeta, declarative_base
+from config import DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_NAME
 
-DATABASE_URL = 'postgresql+asyncpg://postgres:71705422@localhost:5432/postgres'
+
+DATABASE_URL = f'postgresql+asyncpg://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
 Base: DeclarativeMeta = declarative_base()
 
 
